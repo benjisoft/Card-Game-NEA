@@ -1,0 +1,27 @@
+START;
+before_check:
+/Ask user if they would like to: 
+a) Play
+b) Quit/;
+if (Input is null){
+Output Input invalid. Quitting...;
+return END}
+else
+block AWS API {
+Send response to AWS Rekognition for sentiment analysis;
+Convert JSON Response to 2 variables 
+(P for postive sentiment and n for negative sentiment);}
+if (Sentiment is more 
+positive than negative) {
+  /Ask user for number of cards in deck/;
+  Select choosen number of cards 
+  from TXT file send to split them between CPU_crds and plr_crds;
+  Select card from CPU_crds and plr_crds at random;
+  Display player's card to player;
+  /Ask the user which statistic they would like/;
+  
+  
+  loop before_check
+};
+Output Quitting...;
+END
