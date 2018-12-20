@@ -19,9 +19,24 @@ positive than negative) {
   Select card from CPU_crds and plr_crds at random;
   Display player's card to player;
   /Ask the user which statistic they would like/;
-  
-  
-  loop before_check
+  Set users statistic to usr_statistic and CPUs statistic to CPU_statistic;
+  if(response = "drool"){
+    if(usr_statistic<=CPU_statistic){
+      Put both cards at the bottom of user's pile;
+      Output Congrats, you won!;
+    }else{
+      Put both cards at the bottom of computer's pile;
+      Output You lost;
+    }
+  }else{
+    if(usr_statistic>CPU_statistic){
+      
+      Output Congratulations, you won!;
+      loop before_check
+    }else {
+      Output The computer has won!;
+      loop before_check
+  }
 };
 Output Quitting...;
 END
