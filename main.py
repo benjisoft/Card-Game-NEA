@@ -6,9 +6,9 @@ import json
 
 comprehend = boto3.client(service_name='comprehend', region_name='eu-west-1')
 # Change variable production to 0 for in order to enable verbose mode. 
-production = 1
-if production == 1: 
-    v = input("Would you like to enable verbose mode? (0/1)")
+production = 0
+if production == 0: 
+    v = int(input("Would you like to enable verbose mode? (0/1)"))
 else:
     v=0
 
