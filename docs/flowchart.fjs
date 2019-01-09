@@ -26,14 +26,15 @@ positive than negative) {
       Output Congrats, you won!;
     }else{
       Put both cards at the bottom of computer's pile;
-      Output You lost;
+      Output The computer has won;
     }
   }else{
     if(usr_statistic>CPU_statistic){
-      
+      Put both cards at the bottom of the user's pile;
       Output Congratulations, you won!;
       loop before_check
     }else {
+      Put both cards at the bottom of the comuter's pile;
       Output The computer has won!;
       loop before_check
   }
