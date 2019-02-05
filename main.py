@@ -29,14 +29,22 @@ while 1:
         sleep(1)
         break
     if p>=n:
-        randline = getline("dogs.txt", randint(1,30))
+        dname = getline("dogs.txt", randint(1,30))
         excersise = randint(1,5)
         inteligence = randint(1,100)
         friendliness = randint(1,10)
         drool = randint(1,10)
         print("Welcome!")
-        print(excersise)
-        print(randline)
+        print("Excersise: ", excersise)
+        print("Intelignece: ", inteligence)
+        print("Friendliness: ", friendliness)
+        print("Drool: ", drool)
+        print(dname)
+        selection = input("Please select a category... \n")
+        if selection.lower() == "drool":
+            print("You selected drool")
+        else: 
+            print("You did not select drool")
     else:
         print("Exiting...")
         break

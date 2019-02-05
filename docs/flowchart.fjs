@@ -26,7 +26,7 @@ positive than negative) {
       Output Congrats, you won!;
     }else{
       Put both cards at the bottom of computer's pile;
-      Output The computer has won;
+      Output The computer has won; 
     }
   }else{
     if(usr_statistic>CPU_statistic){
@@ -39,5 +39,6 @@ positive than negative) {
       loop before_check
   }
 };
-Output Quitting...;
+loop before_check;}
+else Output Quitting;
 END
