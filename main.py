@@ -5,25 +5,13 @@ import boto3
 import json
 
 comprehend = boto3.client(service_name='comprehend', region_name='eu-west-1')
-# Change variable production to 0 for in order to enable verbose mode. 
-production = 0
-if production == 0: 
-    v = int(input("Would you like to enable verbose mode? (0/1)"))
-else:
-    v=0
 
 while 1: 
     choice = str.lower(input("What would you like to do? (Play/ Quit)"))
-    if v == 1:
-        print('Calling DetectSentiment')
     if choice != "":
         result = comprehend.detect_sentiment(Text=choice, LanguageCode='en') #, sort_keys=True, indent=4)
         p = result["SentimentScore"]["Positive"]
-        if v == 1:
-            print("P = ", p)
         n = result["SentimentScore"]["Negative"]
-        if v == 1:
-            print("N = ", n)
     else: 
         print("No input detected, quitting...")
         sleep(1)
@@ -42,9 +30,26 @@ while 1:
         print(dname)
         selection = input("Please select a category... \n")
         if selection.lower() == "drool":
-            print("You selected drool")
-        else: 
-            print("You did not select drool")
+            if drool <= randint(1,10):
+                print("You won!")
+            else:
+                print("You loose!")
+        elif selection.lower() == "excersise": 
+            if excersise > randint(1,100):
+                print("You win!")
+            else:
+                print("You loose!")
+        elif selection.lower() == "inteligence": 
+            if inteligence > randint(1,100):
+                print("You win!")
+            else: 
+                print("You loose!")
+        elif selection.lower() == "friendliness":
+            if friendliness > randint(1,10):
+                print("You win!")
+            else: 
+                print("You loose!")
+        else: print("Not recognised")
     else:
         print("Exiting...")
         break

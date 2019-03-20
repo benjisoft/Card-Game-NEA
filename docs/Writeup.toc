@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Initiation}{1}{section.1}
+\contentsline {section}{\numberline {2}Planning}{3}{section.2}
+\contentsline {paragraph}{Technologies}{3}{section*.2}
+\contentsline {subsection}{\numberline {2.1}Flowchart}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Pseudocode}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}Development}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Python Code}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Version Control}{5}{subsection.3.2}
+\contentsline {section}{\numberline {4}Evaluation}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Testing}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Conclusion}{6}{subsection.4.2}
